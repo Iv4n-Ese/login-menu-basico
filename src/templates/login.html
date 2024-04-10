@@ -1,0 +1,32 @@
+{% extends 'layoutLogin.html' %}
+
+{% block body %}
+<main class="form-signin">
+    <form>
+      <img class="mb-4 logo" src="{{ url_for('static', filename='img/pexels-logo.jpg')}}" alt="" width="160" height="57">
+      <h1 class="h3 mb-3 fw-normal">Acceso</h1>      
+      <div class="form-floating mt-2">
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Correo de usuario</label>
+      </div>
+      <div class="form-floating mt-2">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+        <label for="floatingPassword">Contraseña</label>
+      </div>
+      <a href="/acceso" class="w-100 btn btn-lg btn-primary login">
+         Acceso
+       </a>
+      <div class="row">
+        <div class="col-md-6">
+            <a href="/registro">Registro</a>
+        </div>
+        <div class="col-md-6 text-end">
+            <a href="/recuperar">Recuperar cuenta</a>
+        </div>
+      </div>
+      <p class="mt-5 mb-3 text-muted">&copy; 2024</p>
+    </form>
+    
+  </main>
+
+{% endblock %}

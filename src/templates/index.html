@@ -1,0 +1,87 @@
+{% extends 'layoutSesion.html' %}
+
+{% block title %} 
+    Login Menú
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-2">
+        {% include 'panel.html' %}
+    </div>
+
+    <div class="col-9">
+        <table class="table mt-4 table-bordered border-primary table-responsive">
+            <thead>
+              <tr class="text-center">
+                <th scope="col">Folio</th>
+                <th scope="col">Primer Apellido</th>
+                <th scope="col">Segundo Apellido</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Correo</th>
+                <th scope="col">Perfil</th>
+                <th scope="col">Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>103456789</td>
+                <td>Sanders</td>
+                <td>Otto</td>
+                <td>Mark</td>
+                <td>@mdo</td>
+                <td>Operación</td>
+                <td class="text-center">
+                    <i class="bi bi-file-earmark-person" style="font-size: 1.2rem;"></i>
+                    
+                    <i class="bi-pen" style="font-size: 1.2rem;"></i>
+                    <i class="bi-trash" style="font-size: 1.2rem;"></i>
+                </td>
+              </tr>
+              <tr>
+                <td>113456789</td>
+                <td>Gump</td>
+                <td>Thornton</td>
+                <td>Jacob</td>
+                <td>@fast</td>
+                <td>Operación</td>
+                <td class="text-center">
+                    <i class="bi bi-file-earmark-person" style="font-size: 1.2rem;"></i>
+                    <i class="bi-pen" style="font-size: 1.2rem;"></i>
+                    <i class="bi-trash" style="font-size: 1.2rem;"></i>
+                </td>
+              </tr>
+              <tr>
+                <td>123456789</td>
+                <td>Bird</td>
+                <td>London</td>
+                <td>Larry</td>
+                <td>@twitter</td>
+                <td>Operación</td>
+                <td class="text-center">
+                    <i class="bi bi-file-earmark-person" style="font-size: 1.2rem;"></i>
+                    <i class="bi-pen" style="font-size: 1.2rem;"></i>
+                    <i class="bi-trash" style="font-size: 1.2rem;"></i>
+                </td>
+              </tr>
+              <tr>
+                <td>123456789</td>
+                <td>Lars</td>
+                <td>Dust</td>
+                <td>Michael</td>
+                <td>@twitter</td>
+                <td>Administración</td>
+                <td class="text-center">
+                    <i class="bi bi-file-earmark-person" style="font-size: 1.2rem;"></i>
+                    <i class="bi-pen" style="font-size: 1.2rem;"></i>
+                    <i class="bi-trash" style="font-size: 1.2rem;"></i>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+</div>
+
+
+
+{% endblock %}

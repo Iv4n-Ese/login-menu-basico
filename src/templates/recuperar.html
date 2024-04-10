@@ -1,0 +1,32 @@
+{% extends 'layoutLogin.html' %}
+
+{% block body %}
+<main class="form-signin">
+    <form>
+      <img class="mb-4 logo" src="{{ url_for('static', filename='img/pexels-logo.jpg')}}" alt="" width="160" height="57">
+      <h1 class="h3 mb-3 fw-normal">Recuperar cuenta de acceso</h1>  
+      <div class="form-floating mt-2">
+        <input type="email" class="form-control" id="floatingPassword" placeholder="Password">
+        <label for="floatingPassword">Ingrese cuenta de Correo </label>
+      </div>
+      <div class="form-floating mt-2">
+        <input type="email" class="form-control" id="floatingPassword" placeholder="Password">
+        <label for="floatingPassword">Repetir cuenta de Correo</label>
+      </div>      
+      <a href="/" class="w-100 btn btn-lg btn-primary login mt-2">
+        Recuperar
+      </a>      
+      <div class="row">
+        <div class="col-md-6">
+            <a href="/">Inicio de Sesión</a>
+        </div>
+        <div class="col-md-6 text-end">
+            <a href="/registro">Registro</a>
+        </div>
+      </div>
+      <p class="mt-5 mb-3 text-muted">&copy; 2024</p>
+    </form>
+    
+</main>
+
+{% endblock %}
